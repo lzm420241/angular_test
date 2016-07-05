@@ -31,7 +31,7 @@ module.exports = function(config) {
     exclude: [
     ],
 
-    reporters: ['progress', 'coverage'],
+    // reporters: ['progress', 'coverage'],
     
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
