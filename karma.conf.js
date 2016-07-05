@@ -21,11 +21,11 @@ module.exports = function(config) {
     ],
 
     //for ci
-    singleRun = true;
-    reporters = ['dots', 'junit'];
-    junitReporter = {
+    singleRun : true,
+    reporters : ['dots', 'junit'],
+    junitReporter : {
       outputFile: 'test-results.xml'
-    };
+    },
 
     // list of files to exclude
     exclude: [
@@ -44,7 +44,7 @@ module.exports = function(config) {
     // possible values: 'dots', 'progress'
     // available reporters: https://npmjs.org/browse/keyword/karma-reporter
     coverageReport: {
-        type: 'html',
+        type: 'cobertura',
         dir: 'coverage/'
     },
 
